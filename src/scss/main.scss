@@ -1,0 +1,17 @@
+// node_modules
+@import 'slick-carousel/slick/slick.scss';
+// node_modules END
+
+@import 'base/variables';
+@import 'base/settings';
+
+@import 'modules/slider';
+
+@import 'sections/header';
+
+// @import 'sections/homepage_slider';
+// @import 'sections/homepage_about';
+// @import 'sections/homepage_shop';
+// @import 'sections/page_about';
+// @import 'sections/page_contact';
+@import 'sections/footer';

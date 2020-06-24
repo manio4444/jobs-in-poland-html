@@ -1,0 +1,29 @@
+#footer {
+  padding: 0;
+}
+
+.meamo-footer {
+  background-color: $background_footer;
+  margin: 0;
+  padding: 3rem 25px;
+  text-align: center;
+
+  img.logo {
+    margin-top: 2rem;
+  }
+
+@media (max-width: 767px) {
+} //media
+@media (min-width: 768px) {
+} //media
+@media (max-width: 1023px) {
+  img.logo {
+    max-height: 100px;
+  }
+} //media
+@media (min-width: 1024px) {
+  img.logo {
+    max-height: 160px;
+  }
+} //media
+} //.meamo-footer

@@ -1,0 +1,56 @@
+.slick-slider {
+	.slick-arrow {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 4rem;
+		color: black;
+		z-index: 1; //because left arrow is covered by slider
+		&:hover {
+      color: $color_hover_link;
+    }
+	}
+
+	.slick-prev {left: 0;}
+	.slick-next {right: 0;}
+
+@media (max-width: 767px) {
+
+} //media
+@media (max-width: 1023px) {} //media
+@media (min-width: 1024px) {} //media
+@media (min-width: 1400px) {} //media
+} //.slick-slider
+
+.slick-dots {
+	display: flex;
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	right: 0;
+	justify-content: center;
+	li {
+		font-size: 0;
+		opacity: .5;
+		margin: 0 8px;
+		&::after {
+			content: '';
+			background-color: white;
+			border-radius: 50%;
+			width: 12px;
+			height: 12px;
+			display: block;
+		}
+		&.slick-active,
+		&:hover {
+			opacity: 1;
+		}
+		&:not(:last-child) {
+			// margin-right: 15px;
+		}
+    & > button {
+      display: none;
+    }
+	}
+}
