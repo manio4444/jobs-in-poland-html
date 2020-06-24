@@ -31,7 +31,7 @@ a {
 
 p {
     font-size: 1.2rem;
-    color: $color_meamo_black;
+    // color: $color_jobs_black;
     // font-weight: 400;
     line-height: 1.7em;
 }
@@ -56,4 +56,11 @@ p {
   margin: 0 auto;
   padding-left: $padding_wrapper;
   padding-right: $padding_wrapper;
+}
+
+main {
+  padding-top: $header_height_mobile;
+  @media (min-width: 1024px) {
+    padding-top: $header_height_medium;
+  }
 }

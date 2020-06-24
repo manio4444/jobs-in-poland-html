@@ -1,4 +1,4 @@
-$font_default: 'Lato', sans-serif;
+$font_default: 'Ubuntu', sans-serif;
 $font_default_weight: 400;
 $font_default_weight_light: 300;
 $font_default_weight_medium: 500;
@@ -6,9 +6,11 @@ $font_default_weight_bold: 700;
 
 $base_color_background: #ffffff;
 
-$color_hover_link: #29aae1;
 $color_jobs_blue: #2e368e;
-$color_meamo_gray: #848484;
+$color_jobs_blue_light: #29aae1;
+$color_jobs_gray: #848484;
+
+$color_hover_link: $color_jobs_blue_light;
 
 $color_border_header: transparent;
 
