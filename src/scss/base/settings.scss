@@ -18,12 +18,8 @@ body {
   font-family: $font_default;
   // color: $color1;
   font-weight: $font_default_weight;
-  background-color: #ffffff;
-  margin: 0;
-}
-
-body.page-index {
   background-color: $base_color_background;
+  margin: 0;
 }
 
 a {
@@ -54,7 +50,7 @@ p {
 }
 .title-normal { @include title-normal; }
 
-.meamo-wrapper {
+.section-wrapper {
   width: 100%;
   max-width: calc(#{$width_wrapper} + 2 * #{$padding_wrapper});
   margin: 0 auto;

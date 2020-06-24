@@ -45,6 +45,9 @@ const CONFIG = {
     ],
     JS: [
       `${THEME_FOLDER}/src/js/**/*.js`
+    ],
+    TEMPLATES: [
+      `${THEME_FOLDER}/**/*.html`,
     ]
   }
 };
@@ -73,9 +76,16 @@ const JsTask = done => {
   done();
 }
 
+const reload = done => {
+    browserSync.reload();
+
+    done();
+};
+
 const watchers = () => {
-  gulp.watch(CONFIG.WATCHERS.SCSS, StylesTaskDev);
-  gulp.watch(CONFIG.WATCHERS.JS, JsTask);
+  gulp.watch(CONFIG.WATCHERS.SCSS, gulp.series(StylesTaskDev, reload));
+  gulp.watch(CONFIG.WATCHERS.JS, gulp.series(JsTask, reload));
+  gulp.watch(CONFIG.WATCHERS.TEMPLATES, reload);
 }
 
 const liveReload = done => {
