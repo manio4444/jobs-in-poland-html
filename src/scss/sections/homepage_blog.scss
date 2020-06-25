@@ -1,4 +1,4 @@
-.home-offers {
+.home-blog {
   padding: 2rem 0;
   .text-block {
     margin-bottom: 4rem;
@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     .jobs-block {
-      width: calc(25% - .7rem);
+      width: calc(33% - .7rem);
       margin: 0 0 3rem;
 
     }
@@ -16,6 +16,7 @@
 
   &__button {
     text-align: center;
+    padding-top: 3rem;
   }
 
 @media (max-width: 767px) {
@@ -41,9 +42,9 @@
     left: 0;
     right: 0;
     background-color: #f8f8f8;
-    height: 27rem;
+    height: 38rem;
     z-index: -1;
     pointer-events: none;
   }
 } //media
-} //.home-offers
+} //.home-blog
