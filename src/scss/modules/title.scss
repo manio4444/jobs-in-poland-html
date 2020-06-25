@@ -1,0 +1,32 @@
+@mixin title-normal {
+  margin: 0;
+  margin-bottom: 1em;
+  font-weight: $font_default_weight_bold;
+  font-size: 1.6rem;
+  color: $color_jobs_blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &::before,
+  &::after {
+    content: '';
+    width: 1.1em;
+    height: 4px;
+    background-color: $color_jobs_blue_light;
+    border-radius: 3px;
+  }
+  &::before {
+    margin-right: 1em;
+  }
+  &::after {
+    margin-left: 1em;
+  }
+  @media (min-width: 1024px) {
+    font-size: 2rem;
+  }
+  @media (min-width: 1440px) {
+    font-size: 3rem;
+  }
+}
+.title-normal { @include title-normal; }

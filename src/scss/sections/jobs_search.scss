@@ -1,0 +1,28 @@
+.jobs-search {
+  margin: 2rem 0;
+  &__form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .jobs-input {
+    margin: .2rem .1rem;
+  }
+  .jobs-btn {
+    margin: .2rem;
+  }
+
+@media (max-width: 767px) {
+} //media
+@media (min-width: 768px) {
+} //media
+@media (max-width: 1023px) {
+  &__form {
+    flex-direction: column;
+    align-items: center;
+  }
+} //media
+@media (min-width: 1024px) {
+  margin: 4rem 0;
+} //media
+} //.jobs-search
