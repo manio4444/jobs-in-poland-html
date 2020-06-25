@@ -1,24 +1,50 @@
 .home-offers {
-  margin: 2rem 0;
+  padding: 2rem 0;
   .text-block {
     margin-bottom: 4rem;
   }
-  &__form {
+  &__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    .jobs-block {
+      width: calc(25% - .7rem);
+      margin: 0 0 3rem;
+
+    }
   }
 
-
-
+  &__button {
+    text-align: center;
+    padding-top: 3rem;
+  }
 
 @media (max-width: 767px) {
 } //media
 @media (min-width: 768px) {
 } //media
 @media (max-width: 1023px) {
-
+  &__list {
+    justify-content: center;
+    .jobs-block {
+      width: 300px;
+      margin: 0 .5rem 1rem;
+    }
+  }
 } //media
 @media (min-width: 1024px) {
-  margin: 4rem 0;
+  padding: 4rem 0;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f8f8f8;
+    height: 27rem;
+    z-index: -1;
+    pointer-events: none;
+  }
 } //media
-} //.home-oggers
+} //.home-offers

@@ -1,5 +1,5 @@
 .jobs-search {
-  margin: 2rem 0;
+  padding: 2rem 0;
   &__form {
     display: flex;
     justify-content: center;
@@ -23,6 +23,6 @@
   }
 } //media
 @media (min-width: 1024px) {
-  margin: 4rem 0;
+  padding: 4rem 0;
 } //media
 } //.jobs-search

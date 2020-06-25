@@ -9,9 +9,10 @@
   font-weight: $font_default_weight_medium;
   font-family: 'Ubuntu', sans-serif;
   text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 3px;
+  display: inline-block;
 @media (min-width: 1024px) {
   padding: 1.3rem 2.7rem;
-
 } //media
 }

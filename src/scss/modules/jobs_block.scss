@@ -1,0 +1,102 @@
+.jobs-block {
+  // height: 315px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  color: $color_jobs_blue;
+  border-radius: 8px;
+  text-decoration: none;
+
+  &__top {
+    padding: 2rem 1.3rem;
+    padding-bottom: 0;
+    flex-grow: 1;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  &__bottom {
+    padding: 1rem 2rem 1.5rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: relative;
+  }
+
+  &__pretitle {
+    font-size: 1.1rem;
+    font-weight: $font_default_weight_light;
+    margin-bottom: 2rem;
+  }
+  &__title {
+    font-size: 1.3rem;
+    font-weight: $font_default_weight_medium;
+    margin-bottom: auto;
+    margin-bottom: 2rem;
+  }
+  &__company {
+    margin-bottom: 2rem;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  &__date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    color: #b1b1b1;
+    font-size: .8rem;
+    &::before {
+      content: '';
+      display: block;
+      width: 3em;
+      height: 4px;
+      background-color: $color_jobs_blue_light;
+      border-radius: 3px;
+    }
+  }
+
+&:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.12);
+  .jobs-block {
+    &__bottom {
+      background-color: $color_jobs_blue_light;
+      color: #ffffff;
+      &::after {
+        content: '';
+        position: absolute;
+        right: 2rem;
+        bottom: -1rem;
+        width: 0;
+        height: 0;
+        border-left: 2rem solid transparent;
+        border-right: 0;
+        border-top: 1rem solid $color_jobs_blue_light;
+      }
+    }
+    &__date {
+      color: inherit;
+      &::before {
+        background-color: $color_jobs_blue;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+} //media
+@media (min-width: 768px) {
+} //media
+@media (max-width: 1023px) {
+
+} //media
+@media (min-width: 1024px) {
+  &__top {
+    padding: 3rem;
+    padding-bottom: 0;
+  }
+  &__bottom {
+    padding: 3rem;
+  }
+} //media
+} // .jobs-block
