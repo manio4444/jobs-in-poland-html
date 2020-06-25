@@ -11,7 +11,12 @@
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 3px;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  i {
+    margin-left: .5em;
+  }
 @media (min-width: 1024px) {
   padding: 1.3rem 2.7rem;
 } //media

@@ -1,29 +1,71 @@
-#footer {
-  padding: 0;
-}
-
 .jobs-footer {
   background-color: $background_footer;
-  margin: 0;
-  padding: 3rem 25px;
-  text-align: center;
+  background-image: url('../img/footer-bgn.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 
-  img.logo {
-    margin-top: 2rem;
+  .title-normal {
+    color: #fff;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    font-weight: $font_default_weight_medium;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    p {
+      font-size: 0.625rem;
+    }
   }
 
 @media (max-width: 767px) {
+  &__social {
+    flex-direction: column;
+    a {
+      margin: 1.6rem 0;
+    }
+  }
 } //media
 @media (min-width: 768px) {
+  &__social {
+    a {
+      margin: 3rem;
+    }
+  }
 } //media
 @media (max-width: 1023px) {
-  img.logo {
-    max-height: 100px;
+  padding: 3rem 0 1.6rem;
+  &__copy {
+    flex-direction: column;
+    text-align: center;
+    img {
+      margin: 2rem 0;
+    }
   }
 } //media
 @media (min-width: 1024px) {
-  img.logo {
-    max-height: 160px;
+  padding: 5rem 0 3rem;
+  &__copy {
+    img {
+      margin-right: 2rem;
+    }
+    .nav {
+      margin-right: auto;
+    }
   }
 } //media
 } //.jobs-footer
