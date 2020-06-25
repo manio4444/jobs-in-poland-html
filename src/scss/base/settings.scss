@@ -58,9 +58,9 @@ p {
   padding-right: $padding_wrapper;
 }
 
-main {
-  padding-top: $header_height_mobile;
-  @media (min-width: 1024px) {
-    padding-top: $header_height_medium;
-  }
-}
+// main {
+//   padding-top: $header_height_mobile;
+//   @media (min-width: 1024px) {
+//     padding-top: $header_height_medium;
+//   }
+// }
