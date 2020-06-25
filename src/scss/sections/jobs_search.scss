@@ -14,6 +14,22 @@
     margin: .2rem;
   }
 
+  &.inverted-color {
+    position: relative;
+    color: white;
+    background-color: $color_jobs_blue;
+    background-image: url('../img/home-pic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .title-normal {
+      color: #fff;
+      &::after,
+      &::before {
+        background-color: #fff;
+      }
+    }
+  }
+
 @media (max-width: 767px) {
 } //media
 @media (min-width: 768px) {
