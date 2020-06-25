@@ -1,0 +1,19 @@
+.section-banner {
+
+  &__banner {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 29%;
+
+    margin-bottom: 2rem;
+    border-radius: 8px;
+
+    &.employer {
+      background-image: url('../img/pracodawcy.png');
+    }
+    &.companies {
+      background-image: url('../img/dla-firm.png');
+    }
+  }
+}
