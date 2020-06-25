@@ -15,8 +15,14 @@
 } //media
 @media (max-width: 1023px) {
   padding: 2rem 0;
+  &__text {
+    padding-left: 10%;
+  }
 } //media
 @media (min-width: 1024px) {
   padding: 4rem 0;
+  &__text {
+    padding-left: 25%;
+  }
 } //media
 } //.home-slider
