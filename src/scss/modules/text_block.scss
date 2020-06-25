@@ -11,3 +11,38 @@
   }
 }
 .text-block { @include text-block; }
+
+.text-block--split-half {
+  max-width: initial;
+  display: flex;
+  flex-wrap: wrap;
+  p {
+    flex-basis: 100%;
+    position: relative;
+    padding-left: 4rem;
+    padding-right: 2rem;
+    margin-bottom: 2em;
+    &::before {
+      content: '';
+      display: block;
+      width: 2rem;
+      height: 4px;
+      background-color: $color_jobs_blue_light;
+      border-radius: 3px;
+      position: absolute;
+      top: .6em;
+      left: 1rem;
+    }
+  }
+@media (min-width: 1024px) {
+  p {
+    flex-basis: 50%;
+    padding-left: 7rem;
+    padding-right: 4rem;
+    &::before {
+      width: 3rem;
+      left: 2rem;
+    }
+  }
+}
+}
