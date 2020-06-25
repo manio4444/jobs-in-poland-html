@@ -1,5 +1,4 @@
 .home-offers {
-  padding: 2rem 0;
   .text-block {
     margin-bottom: 4rem;
   }
@@ -23,6 +22,7 @@
 @media (min-width: 768px) {
 } //media
 @media (max-width: 1023px) {
+  padding: 2rem 0;
   &__list {
     justify-content: center;
     .jobs-block {
