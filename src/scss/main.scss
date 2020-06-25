@@ -1,4 +1,5 @@
 @import 'base/normalize';
+@import 'base/reset';
 
 // node_modules
 @import 'slick-carousel/slick/slick.scss';
@@ -11,11 +12,13 @@
 @import 'modules/button';
 @import 'modules/title';
 @import 'modules/input';
+@import 'modules/text_block';
 
 @import 'sections/header';
 
 @import 'sections/homepage_slider';
 @import 'sections/jobs_search';
+@import 'sections/homepage_offers';
 // @import 'sections/homepage_about';
 // @import 'sections/page_about';
 // @import 'sections/page_contact';
