@@ -10,7 +10,7 @@ Created on node 12, if you don't have thin version consider installing Node Vers
 ### Start dev server && create assets:
 If dependencies are not installed:
 
-`npm install`-
+`npm install`
 
 Then
 
