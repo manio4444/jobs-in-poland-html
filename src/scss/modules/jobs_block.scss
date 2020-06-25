@@ -2,10 +2,16 @@
   // height: 315px;
   display: flex;
   flex-direction: column;
-  background-color: #f5f5f5;
   color: $color_jobs_blue;
   border-radius: 8px;
   text-decoration: none;
+  &.white-bgn {
+    background-color: #fff;
+    border: 1px solid #f5f5f5;
+  }
+  &:not(.white-bgn) {
+    background-color: #f5f5f5;
+  }
 
   &__top {
     padding: 2rem 1.3rem;
@@ -23,6 +29,27 @@
     position: relative;
   }
 
+  &__prelogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    img {
+      max-height: 46px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      background-color: #dcdcdc;
+      height: 1px;
+      filter: blur(1px);
+    }
+  }
   &__pretitle {
     font-size: 1.1rem;
     font-weight: $font_default_weight_light;

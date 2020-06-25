@@ -1,0 +1,22 @@
+.first-section {
+  background-image: url('../img/home-pic.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+@media (max-width: 767px) {
+} //media
+@media (min-width: 768px) {
+} //media
+@media (max-width: 1023px) {
+  padding: 2rem 0;
+} //media
+@media (min-width: 1024px) {
+  padding: 4rem 0;
+} //media
+} //.home-slider
