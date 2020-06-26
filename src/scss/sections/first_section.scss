@@ -4,10 +4,23 @@
   background-size: cover;
   color: white;
 
+  &__date {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
   &__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  &__breadcrumbs {
+    font-size: 0.875rem;
+    span {
+      color: $color_jobs_blue_light;
+      margin: 0 .6rem;
+    }
   }
 @media (max-width: 767px) {
 } //media

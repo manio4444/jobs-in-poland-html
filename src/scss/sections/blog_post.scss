@@ -1,0 +1,64 @@
+.blog-post {
+  padding: 2rem 0;
+  color: $color_jobs_blue;
+
+  h3 {
+    font-weight: $font_default_weight_medium;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    margin-bottom: 2rem;
+    line-height: 1.5em;
+    li {
+      position: relative;
+      padding-left: 2rem;
+      &::before {
+        content: '';
+        display: block;
+        width: 1rem;
+        height: 4px;
+        background-color: #29aae1;
+        border-radius: 3px;
+        position: absolute;
+        top: .7em;
+        left: 0;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  &__share {
+    font-size: 1.3em;
+    margin-top: 3rem;
+    i {
+      font-size: 2rem;
+    }
+  }
+
+@media (max-width: 767px) {
+} //media
+@media (min-width: 768px) {
+} //media
+@media (max-width: 1023px) {
+} //media
+@media (min-width: 1024px) {
+  padding: 4rem 0;
+  ul {
+    li {
+      padding-left: 4rem;
+      &::before {
+      }
+    }
+  }
+} //media
+} //.blog-post
