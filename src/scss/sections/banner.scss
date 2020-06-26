@@ -73,7 +73,10 @@
       }
       p {
         font-weight: $font_default_weight_light;
-        max-width: 400px;
+        max-width: 500px;
+      }
+      .jobs-btn {
+        align-self: flex-end;
       }
     }
   }
@@ -83,6 +86,31 @@
 @media (min-width: 768px) {
 } //media
 @media (max-width: 1023px) {
+  &__banner {
+    padding-top: 100%;
+    background-size: 366%;
+  }
+  &__content {
+    &--center {
+      p {
+        font-size: 3rem;
+      }
+    }
+    &--with-logo {
+      background-position: 1.3rem top;
+      background-size: 3rem auto;
+      padding: 0 1rem 2rem 5rem;
+      h3 {
+        margin-top: .4rem;
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+      .jobs-btn {
+        align-self: flex-end;
+      }
+    }
+  }
 } //media
 @media (min-width: 1024px) {
   &__content {
