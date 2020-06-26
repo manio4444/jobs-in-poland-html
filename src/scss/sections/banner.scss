@@ -9,20 +9,20 @@
     margin-bottom: 2rem;
     border-radius: 8px;
 
-    p {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      font-size: 1.3rem;
-      font-weight: $font_default_weight_medium;
-      color: #fff;
-    }
+    // & > p {
+    //   position: absolute;
+    //   top: 0;
+    //   bottom: 0;
+    //   left: 0;
+    //   right: 0;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   text-align: center;
+    //   font-size: 1.3rem;
+    //   font-weight: $font_default_weight_medium;
+    //   color: #fff;
+    // }
 
     &.employer {
       background-image: url('../img/pracodawcy.png');
@@ -37,6 +37,47 @@
     }
   }
 
+  &__content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    color: #fff;
+    &--center {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-weight: $font_default_weight_medium;
+      p {
+        font-size: 1.3rem;
+      }
+    }
+    &--with-logo {
+      top: initial;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: flex-end;
+      background-image: url('../img/logo-white.png');
+      background-repeat: no-repeat;
+      background-position: 2rem top;
+      background-size: 4rem auto;
+      padding: 0 2rem 2rem 8rem;
+      h3 {
+        flex-basis: 100%;
+        font-size: 2rem;
+        margin-bottom: 1.8rem;
+        margin-top: 0.7rem;
+      }
+      p {
+        font-weight: $font_default_weight_light;
+        max-width: 400px;
+      }
+    }
+  }
+
 @media (max-width: 767px) {
 } //media
 @media (min-width: 768px) {
@@ -44,8 +85,12 @@
 @media (max-width: 1023px) {
 } //media
 @media (min-width: 1024px) {
-  p {
-    font-size: 3rem;
+  &__content {
+    &--center {
+      p {
+        font-size: 3rem;
+      }
+    }
   }
 } //media
 } // .section-banner
