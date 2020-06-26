@@ -9,6 +9,21 @@
     margin-bottom: 2rem;
     border-radius: 8px;
 
+    p {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: $font_default_weight_medium;
+      color: #fff;
+    }
+
     &.employer {
       background-image: url('../img/pracodawcy.png');
     }
@@ -16,5 +31,21 @@
       background-image: url('../img/dla-firm.png');
       margin-bottom: 4rem;
     }
+    &.about {
+      background-image: url('../img/about-banner.png');
+      margin-bottom: 4rem;
+    }
   }
-}
+
+@media (max-width: 767px) {
+} //media
+@media (min-width: 768px) {
+} //media
+@media (max-width: 1023px) {
+} //media
+@media (min-width: 1024px) {
+  p {
+    font-size: 3rem;
+  }
+} //media
+} // .section-banner

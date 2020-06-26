@@ -1,5 +1,5 @@
-.home-blog {
-  padding: 2rem 0;
+.page-about {
+  padding: 2rem 0 0;
   .text-block {
   }
   &__list {
@@ -32,7 +32,7 @@
   }
 } //media
 @media (min-width: 1024px) {
-  padding: 4rem 0;
+  padding: 4rem 0 0;
   position: relative;
   &::before {
     content: '';
@@ -46,4 +46,4 @@
     pointer-events: none;
   }
 } //media
-} //.home-blog
+} //.page-about
