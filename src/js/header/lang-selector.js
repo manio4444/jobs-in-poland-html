@@ -11,6 +11,7 @@ $(document).ready(function() {
     allowHTML: true,
     interactive: true,
     theme: 'light-border',
+    placement: 'bottom-end',
   });
 
 });
