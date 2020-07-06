@@ -9,6 +9,8 @@ $(document).ready(function() {
   tippy($langSelector[0], {
     content: $langContent[0].innerHTML,
     allowHTML: true,
+    interactive: true,
+    theme: 'light-border',
   });
 
 });

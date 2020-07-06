@@ -33,8 +33,23 @@
     }
   }
 
-  &__social {
+  &__social-share {
+    font-size: 1.5rem;
+    color: $color_jobs_blue;
+    padding: .25rem;
+    cursor: pointer;
   }
+  &__social-element {
+    font-size: 1.75rem;
+    color: $color_jobs_blue;
+    padding: .25rem;
+    display: inline-block;
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: .3rem;
+    }
+  }
+
   &__lang {
   }
   &__lang-current {
@@ -46,11 +61,10 @@
     width: 32px;
     line-height: 32px;
     text-align: center;
-    display: block;
+    display: inline-block;
+    cursor: pointer;
     &--in-menu {
-      &:not(:last-child) {
-        margin-bottom: .3rem;
-      }
+      margin: .2rem;
     }
   }
 
