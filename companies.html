@@ -29,8 +29,13 @@
       </nav>
 
       <img src="assets/img/link-spol.png" alt="" class="header-navigation__social">
-      <img src="assets/img/icon-lang.png" alt="" class="header-navigation__lang">
-
+      <div class="header-navigation__lang">
+        <span class="header-navigation__lang-element header-navigation__lang-current">PL</span>
+        <div class="header-navigation__lang-list" style="display: none;">
+          <span class="header-navigation__lang-element header-navigation__lang-element--in-menu">PL</span>
+          <span class="header-navigation__lang-element header-navigation__lang-element--in-menu">EN</span>
+        </div>
+      </div>
 
       <div class="header-navigation__hamburger">
         <span class="hamburger-box"><span class="hamburger-inner"></span></span>
@@ -181,6 +186,8 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
   <script type="text/javascript" src="assets/js/scripts.min.js"></script>
 </body>
 </html>

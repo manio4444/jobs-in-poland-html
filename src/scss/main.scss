@@ -1,8 +1,12 @@
 @import 'base/normalize';
 @import 'base/reset';
 
-// node_modules
+/*
+* import directly from node_modules START
+* IF IMPORTING .CSS FILES, DON'T USE EXTENSION (remove '.css' at end)
+*/
 @import 'slick-carousel/slick/slick.scss';
+@import 'tippy.js/dist/tippy';
 // node_modules END
 
 @import 'base/variables';
