@@ -1,0 +1,39 @@
+#cookieinfo {
+  position: fixed;
+  z-index: 2;
+  font-size: 12px;
+  background-color: $color_jobs_blue_light;
+  width: 100%;
+  box-shadow: 1px 1px 5px 0px rgba(50,50,50,0.75);
+  color: #fff;
+  &.hidden { display: none; }
+  .cookie_wrapper {
+  }
+  .c_desc {
+    font-weight: 300;
+  }
+  .close {
+    position: absolute;
+    top: 8px;
+    right: 11px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+@media (max-width: 1023px) {
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  padding-right: 25px;
+} //media
+@media (min-width: 1024px) {
+  bottom: 50px;
+  left: 50px;
+  padding: 20px;
+  width: 500px;
+  line-height: 18px;
+} //media
+} //#cookieinfo
