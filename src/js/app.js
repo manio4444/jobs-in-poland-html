@@ -10,3 +10,4 @@ import './cookies/cookie-info';
 import './contact/modal';
 
 import './global/semantic-ui-dropdown';
+import './global/back-to-top';
