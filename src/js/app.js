@@ -1,6 +1,7 @@
 import './header/menu-mobile';
 import './header/lang-selector';
 import './header/social-selector';
+import './header/search-selector';
 
 import './home/home-slider';
 
