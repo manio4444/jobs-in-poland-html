@@ -1,6 +1,9 @@
 .home-offers {
-  .section-wrapper {
-    max-width: 1650px;
+
+  &--with-filter {
+    .section-wrapper {
+      max-width: 1650px;
+    }
   }
 
   .text-block {
@@ -50,7 +53,7 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     .jobs-block {
       width: 300px;
       margin: 0 .5rem 3rem;
