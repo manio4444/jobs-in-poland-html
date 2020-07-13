@@ -10,4 +10,41 @@
 @media (min-width: 1024px) {
   padding: 1.3rem 2.7rem;
 } //media
-}
+} // .jobs-input
+
+.jobs-dropdown.ui.dropdown {
+  color: $color_jobs_blue;
+  background-color: #f5f5f5;
+  &:not(.active) {
+    border-color: transparent;
+  }
+  &:not(.multiple).search > input.search,
+  &:not(.multiple) {
+    padding: 1.063rem 2rem;
+  }
+  &.multiple {
+    padding: .517rem 1.4rem;
+  }
+  .dropdown.icon {
+    top: 1.28571429em;
+  }
+  .text {
+    font-size: 1.1rem;
+  }
+  i.icon.delete {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin: 0 0 0 .25rem;
+    &:before {
+    }
+  }
+@media (min-width: 1024px) {
+  &:not(.multiple).search > input.search,
+  &:not(.multiple) {
+    padding: 1.363rem 2.7rem;
+  }
+  &.multiple {
+    padding: .817rem 1.8rem;
+  }
+} //media
+} // .jobs-dropdown.ui.dropdown

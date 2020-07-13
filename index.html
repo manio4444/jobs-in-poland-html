@@ -71,9 +71,40 @@
           Jakiej pracy szukasz?
         </h2>
         <form class="jobs-search__form" action="./offers.html">
-          <input type="text" class="jobs-input" placeholder="stanowisko ...">
-          <input type="text" class="jobs-input" placeholder="miejsce pracy ...">
-          <input type="text" class="jobs-input" placeholder="słowa kluczowe ...">
+          <input type="text" class="jobs-input jobs-search__form-input" placeholder="stanowisko ...">
+          <input type="text" class="jobs-input jobs-search__form-input" placeholder="miejsce pracy ...">
+          <input type="text" class="jobs-input jobs-search__form-input" placeholder="słowa kluczowe ...">
+          <select class="ui dropdown jobs-dropdown jobs-search__form-input">
+            <option value="">Doświadczenie </option>
+            <option value="1">Doświadczenie 1</option>
+            <option value="2">Doświadczenie 2</option>
+            <option value="3">Doświadczenie 3</option>
+          </select>
+          <select class="ui search dropdown jobs-dropdown jobs-search__form-input" multiple>
+            <option value="">język</option>
+            <option value="1">Hiszpański</option>
+            <option value="2">Angielski</option>
+            <option value="3">Rosyjski</option>
+            <option value="4">Polski</option>
+          </select>
+          <select class="ui search dropdown jobs-dropdown jobs-search__form-input">
+            <option value="">miasto</option>
+            <option value="warsaw">Warsaw</option>
+            <option value="łodz">Łódź</option>
+            <option value="krakow">Krakow</option>
+            <option value="wroclaw">Wrocław</option>
+            <option value="poznan">Poznan</option>
+            <option value="gdansk">Gdańsk</option>
+            <option value="szczecin">Szczecin</option>
+            <option value="bydgoszcz">Bydgoszcz</option>
+            <option value="lublin">Lublin</option>
+            <option value="katowice">Katowice</option>
+            <option value="bialystok">Białystok</option>
+            <option value="gdynia">Gdynia</option>
+          </select>
+          <input type="text" class="jobs-input jobs-search__form-input" placeholder="typ oferty ...">
+          <input type="text" class="jobs-input jobs-search__form-input" placeholder=" tekst ogłoszenia ...">
+          <div class="flex-break"></div>
           <button class="jobs-btn jobs-search__button">Szukaj<i class="fa fa-search"></i></button>
         </form>
       </div>
@@ -365,7 +396,7 @@
     </section>
 
     <div class="ui modal tiny contact-modal">
-      <i class="close icon fa fa-times"></i>
+      <i class="close fa fa-times"></i>
       <div class="header">Formularz kontaktowy</div>
       <div class="content contact-modal__content">
         <form action="" class="contact-modal__form">

@@ -3,14 +3,24 @@
   &__form {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
-  .jobs-input {
+  &__form-input {
     margin: .2rem .1rem;
     width: 100%;
     max-width: 350px;
   }
-  .jobs-btn {
+
+  .jobs-input {
+  }
+
+  .flex-break {
+    flex-basis: 100%;
+    height: 0;
+  }
+
+  &__button {
     margin: .2rem;
     cursor: pointer;
   }
