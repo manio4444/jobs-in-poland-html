@@ -31,13 +31,25 @@
 
   &__prelogo {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     position: relative;
     padding-bottom: 2rem;
     margin-bottom: 1rem;
     img {
       max-height: 46px;
+      margin: auto;
+    }
+    span + img {
+      margin: 0;
+      max-width: 36%;
+    }
+    span {
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-right: 4%;
+      width: 60%;
     }
     &::after {
       content: '';
@@ -72,9 +84,9 @@
   }
   &__bottom-title {
     margin-bottom: 2rem;
-    font-size: .8rem;
-    letter-spacing: 2px;
     &.uppercase {
+      font-size: .8rem;
+      letter-spacing: 2px;
       text-transform: uppercase;
     }
   }
@@ -136,7 +148,7 @@
     padding-bottom: 0;
   }
   &__bottom {
-    padding: 3rem;
+    padding: 1.5rem 3rem;
   }
   &__img {
     margin-left: -3rem;
