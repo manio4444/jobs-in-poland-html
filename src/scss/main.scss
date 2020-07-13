@@ -8,6 +8,9 @@
 @import 'slick-carousel/slick/slick.scss';
 @import 'tippy.js/dist/tippy';
 @import 'tippy.js/themes/light-border';
+@import 'semantic-ui-transition/transition.min';
+@import 'semantic-ui-dimmer/dimmer.min';
+@import 'semantic-ui-modal/modal.min';
 // node_modules END
 
 @import 'base/variables';
@@ -20,6 +23,7 @@
 @import 'modules/text_block';
 @import 'modules/jobs_block';
 @import 'modules/cookie_info';
+@import 'modules/contact_modal';
 
 @import 'sections/header';
 

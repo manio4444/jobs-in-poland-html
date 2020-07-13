@@ -11,6 +11,9 @@
   "dependencies": {
     "jquery": "^3.5.1",
     "jquery.cookie": "^1.4.1",
+    "semantic-ui-dimmer": "^2.4.0",
+    "semantic-ui-modal": "^2.4.1",
+    "semantic-ui-transition": "^2.3.1",
     "slick-carousel": "^1.8.1",
     "tippy.js": "^6.2.4"
   },

@@ -162,10 +162,24 @@
         <p>Wszystkich zainteresowanych współpracą zachęcamy do odwiedzenia zakładki <a href="#">Dla firm</a> lub kontaktu przez <a href="#">jobs@esn.pl</a></p>
 
         <div class="write-us__button">
-          <a href="#" class="jobs-btn">napisz do nas</a>
+          <a href="#" class="jobs-btn" data-contact-modal>napisz do nas</a>
         </div>
       </div>
     </section>
+
+    <div class="ui modal tiny contact-modal">
+      <i class="close icon fa fa-times"></i>
+      <div class="header">Formularz kontaktowy</div>
+      <div class="content contact-modal__content">
+        <form action="" class="contact-modal__form">
+          <input type="text" class="jobs-input" placeholder="Imię i Nazwisko" required>
+          <input type="text" class="jobs-input" placeholder="Adres e-mail" required>
+          <input type="text" class="jobs-input" placeholder="Telefon (opcjonalnie)">
+          <textarea type="text" class="jobs-input" placeholder="Treść" rows="5"></textarea>
+          <button class="jobs-btn jobs-search__button">Wyślij<i class="fa fa-envelope"></i></button>
+        </form>
+      </div>
+    </div>
 
   </main>
 
