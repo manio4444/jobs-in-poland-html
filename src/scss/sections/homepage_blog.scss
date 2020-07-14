@@ -5,11 +5,10 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     .jobs-block {
-      width: calc(33% - .7rem);
-      margin: 0 0 3rem;
-
+      width: calc(33% - .7rem * 2);
+      margin: 0 .7rem 3rem;
     }
   }
 
