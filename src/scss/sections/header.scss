@@ -84,6 +84,15 @@
     }
   }
 
+  &__menu-mobile.mm-menu {
+    z-index: 4;
+    background-color: $gray_color_background;
+    color: $color_jobs_blue;
+    .mm-title {
+      color: $color_jobs_blue_light;
+    }
+  }
+
   &__hamburger {
     display: flex;
     .hamburger-box {
@@ -120,14 +129,19 @@
       background-color: $color_jobs_blue;
     }
   }
-  &__hamburger.close::after {
-    content: 'x';
-    position: absolute;
-    top: 1.5rem;
-    right: 20px;
-    font-size: 2rem;
-    font-family: sans-serif;
-    color: $color_jobs_blue
+  &__hamburger.close {
+    .hamburger-inner {
+      display: none;
+    }
+    &::after {
+      content: 'x';
+      position: absolute;
+      top: 1.4rem;
+      right: 1.5rem;
+      font-size: 2.2rem;
+      font-family: sans-serif;
+      color: $color_jobs_blue
+    }
   }
 
 @media (max-width: 767px) {
@@ -144,55 +158,10 @@
       width: 54px;
     }
   }
-  &__item {
-    &:not(:last-child) {
-      margin-top: 1rem;
-    }
-  }
   &__menu {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
-    background-color: $base_color_background;
-    transition: .2s ease;
-
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 2.2rem;
-
-
-    &:not(.is-active) {
-      opacity: 0;
-      pointer-events: none;
-    }
-
-
-    ul {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-      li {
-        a {
-          font-size: 2rem;
-          line-height: 4rem;
-        }
-      }
-    }
-
-    &__close {
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      font-size: 60px;
-    }
+    display: none !important;
   }
+
   &__search,
   &__social {
     margin-right: 1rem;
